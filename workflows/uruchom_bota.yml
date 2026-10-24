@@ -2,14 +2,15 @@ name: Aktualizacja Agregatora Newsow
 
 on:
   schedule:
-    # Automatyczne uruchomienie codziennie o godzinie 6:00 rano
     - cron: '0 6 * * *'
   workflow_dispatch:
-    # Pozwala na ręczne uruchomienie przyciskiem w dowolnym momencie
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Te dwie linijki poniżej załatwiają sprawę uprawnień automatycznie:
+    permissions:
+      contents: write
     steps:
     - name: Pobranie kodu z repozytorium
       uses: actions/checkout@v4
