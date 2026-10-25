@@ -3,50 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AntyTusk - Niezależny Agregator Informacyjny</title>
-    <!-- Ładujemy nowoczesny i bezpieczny styl graficzny -->
+    <title>TuskWatch - Niezależny Agregator Informacyjny</title>
     <link rel="stylesheet" href="https://jsdelivr.net">
     <style>
-        body { max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: system-ui, sans-serif; }
-        header { text-align: center; border-bottom: 2px solid #e1e4e8; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { color: #d9383a; margin-bottom: 5px; }
-        .subtitle { color: #586069; font-size: 1.1rem; }
+        body { max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: system-ui, sans-serif; background: #f9f9f9; color: #333; }
+        header { text-align: center; border-bottom: 3px solid #d9383a; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #d9383a; margin-bottom: 5px; font-size: 2.5rem; letter-spacing: -1px; }
+        .subtitle { color: #586069; font-size: 1.1rem; font-style: italic; }
+        .meta-info { font-size: 0.85rem; color: #888; margin-top: 10px; }
         .news-list { list-style: none; padding: 0; }
-        .news-item { background: #f6f8fa; border-left: 4px solid #d9383a; padding: 15px; margin-bottom: 15px; border-radius: 0 6px 6px 0; }
-        .news-item a { font-weight: bold; text-decoration: none; color: #0366d6; font-size: 1.1rem; }
-        .news-item a:hover { text-decoration: underline; }
-        .comment { margin: 8px 0 0 0; color: #444; font-style: italic; font-size: 0.95rem; background: #fff; padding: 8px 12px; border-radius: 4px; border: 1px solid #e1e4e8; }
-        footer { text-align: center; margin-top: 50px; font-size: 0.85rem; color: #6a737d; border-top: 1px solid #e1e4e8; padding-top: 20px; }
+        .news-item { background: #fff; border-left: 5px solid #d9383a; padding: 20px; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .news-item a { font-weight: bold; text-decoration: none; color: #0366d6; font-size: 1.15rem; display: block; margin-top: 5px; }
+        .news-item a:hover { text-decoration: underline; color: #004494; }
+        .source-badge { background: #e1e4e8; color: #444; padding: 3px 8px; font-size: 0.75rem; font-weight: bold; border-radius: 3px; text-transform: uppercase; }
+        .comment { margin-top: 10px; color: #666; font-style: italic; font-size: 0.95rem; background: #f6f8fa; padding: 10px; border-radius: 4px; border: 1px solid #eee; }
+        footer { text-align: center; margin-top: 60px; font-size: 0.85rem; color: #6a737d; border-top: 1px solid #e1e4e8; padding-top: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>AntyTusk</h1>
-        <div class="subtitle">Agregator prawdziwych wiadomości, faktów i opinii o rządzie</div>
+        <h1>TuskWatch</h1>
+        <div class="subtitle">Agregator prawdziwych wiadomości i faktów o rządzie Donalda Tuska</div>
+        <div class="meta-info">Ostatnia automatyczna aktualizacja danych: 2026-10-25 06:14</div>
     </header>
 
     <main>
-        <p>Prezentujemy wyłącznie zweryfikowane fakty i doniesienia medialne, opatrzone odnośnikami do źródeł pierwotnych. Zero fake newsów.</p>
+        <p>Prezentujemy wyłącznie zweryfikowane doniesienia medialne, opatrzone bezpośrednimi odnośnikami do niezależnych źródeł prasowych. Zero fake newsów, czyste fakty.</p>
         
         <ul class="news-list">
-            <!-- Tutaj są przykładowe newsy. Możesz je potem dowolnie zmieniać lub dopisywać nowe -->
-            
-            <li class="news-item">
-                <a href="https://wp.pl" target="_blank">Przykładowy ważny artykuł o decyzjach premiera</a>
-                <div class="comment">Tutaj możesz wpisać swój krótki, satyryczny lub merytoryczny komentarz do tego wydarzenia.</div>
-            </li>
-
-            <li class="news-item">
-                <a href="https://rp.pl" target="_blank">Kolejny fakt, obietnica lub analiza ekonomiczna rządu</a>
-                <div class="comment">Krótka szydra lub podsumowanie niespełnionej obietnicy wyborczej.</div>
-            </li>
-
+            <li class="news-item">Brak nowych wiadomości z ostatnich godzin spełniających kryteria wyszukiwania.</li>
         </ul>
     </main>
 
     <footer>
-        <p>&copy; 2026 AntyTusk Agregator. Strona w 100% statyczna i bezpieczna.</p>
+        <p>&copy; 2026 TuskWatch. Strona w 100% statyczna i bezpieczna. Dane odświeżane automatycznie.</p>
     </footer>
 
 </body>
